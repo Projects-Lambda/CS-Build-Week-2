@@ -201,6 +201,8 @@ curl -X POST -H 'Authorization: Token 7a375b52bdc410eebbc878ed3e58b2e94a8cb607' 
   "strength": 10,  // How much can you carry?
   "speed": 10,  // How fast do you travel?
   "gold": 400,
+  "bodywear": "None",
+  "footwear": "None",
   "inventory": ["Small Treasure"],
   "status": [],
   "errors": [],
@@ -225,6 +227,10 @@ Certain items can be worn on either your feet or your body for boosts in speed a
 curl -X POST -H 'Authorization: Token 7a375b52bdc410eebbc878ed3e58b2e94a8cb607' -H "Content-Type: application/json" -d '{"name":"[NAME OF WEARABLE]"}' https://lambda-treasure-hunt.herokuapp.com/api/adv/wear/
 `
 
+You may remove items with this command:
+`
+curl -X POST -H 'Authorization: Token 7a375b52bdc410eebbc878ed3e58b2e94a8cb607' -H "Content-Type: application/json" -d '{"name":"[NAME OF WEARABLE]"}' https://lambda-treasure-hunt.herokuapp.com/api/adv/undress/
+`
 
 ## Name Changer
 
@@ -282,7 +288,7 @@ curl -X POST -H 'Authorization: Token 7a375b52bdc410eebbc878ed3e58b2e94a8cb607' 
 
 # Lambda Coins
 
-Once you acquire your true name, you are eligible to complete the Turtle Programming Interview Challenge with your TL. Once you have demonstrated a correct solution, you will be rewarded with an important clue to the mining location. Schedule this with your TL as soon as you reach this point.
+Once you acquire your true name, you should seek out the wishing well. Peer into the waters of the well and you will find a clue that will lead you to the location of your Lambda Coin, eager to be mined with a valid proof.
 
 You may mine for Lambda Coins using the following API endpoints:
 
